@@ -68,7 +68,7 @@ class RollLog extends BaseLog {
 		return file_put_contents($filename, $output, FILE_APPEND);
 	}
 	/**
-	* -creating rooling file
+	* -creating rolling file
 	*/
 
    public function rolling($filename){
