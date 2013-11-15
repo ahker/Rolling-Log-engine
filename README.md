@@ -3,10 +3,15 @@ Rolling-Log-engine
 
 cakephp rotating log file engine
 
+ Note:
+ 
+   Now you can able to read the log files and creating rotating log files.
 
 Step 1:
 
-  create a Folder in your app directory in the name of Log and inside the Log folder create Engine here you need to copy paste 
+  create a Folder in your app directory in the name of Log and inside the Log folder 
+  copy paste the CakeLog.php file and 
+  create Engine here you need to copy paste 
   the RollLog.php file
   
 Step 2:
@@ -38,7 +43,15 @@ CakeLog::config('error', array(
 	'filesize'=> '702',//bytes default 1024bytes
 ));
 
+
+
 change your engine from FileLog to RollLog 
 
 filesize defult 1kb 
+
+
+read a log file use the below code in your app
+
+CakeLog::read('error');
+CakeLog::read('error');
 
