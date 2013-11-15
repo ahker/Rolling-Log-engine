@@ -11,17 +11,29 @@ Step 1:
   
 Step 2:
   in bootstrap 
+
   
   App::uses('CakeLog', 'Log');
+  
+  
 CakeLog::config('debug', array(
+
 	'engine' => 'RollLog',
+	
 	'types' => array('notice', 'info', 'debug'),
+	
 	'file' => 'debug',
+	
         'filesize'=> '702',//bytes default 1024bytes
+        
 ));
+
 CakeLog::config('error', array(
+
 	'engine' => 'RollLog',
+	
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
+	
 	'file' => 'error',
 	'filesize'=> '702',//bytes default 1024bytes
 ));
